@@ -4,4 +4,5 @@
 开发板型号：stm32G431RBT6
 
 # 目录
-1. GPIO.md
+1. config.md
+2. GPIO.md
