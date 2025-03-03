@@ -9,5 +9,9 @@
 提取码:1j66
 ---
 ### second
+- 导入芯片包
+![导入芯片包](https://github.com/fortunate-ouyanghui/LQB/blob/main/ACK.png)
+- 确认导入
+![确认导入](https://github.com/fortunate-ouyanghui/LQB/blob/main/pack.png)
 
 
