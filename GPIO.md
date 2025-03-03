@@ -27,7 +27,7 @@
 - clock，选择24和80
   ![clock](https://github.com/fortunate-ouyanghui/LQB/blob/main/clock.png)
 - GPIO_OutPut，选择PC8-PC15为GPIO输出，注意PD2也要选择GPIO输出
-  ![GPIO配置](https://github.com/fortunate-ouyanghui/LQB/blob/main/GPIO_outpput.png)
+  ![GPIO配置](https://github.com/fortunate-ouyanghui/LQB/blob/main/GPIO_output.png)
 
 
 
