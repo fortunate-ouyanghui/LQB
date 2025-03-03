@@ -21,9 +21,13 @@
 ![LED原理图](https://github.com/fortunate-ouyanghui/LQB/blob/main/LED%E5%8E%9F%E7%90%86%E5%9B%BE.png)
 ## STM32cubemax配置
 - SYS,Debug选择serial Wire
+  ![SYS](https://github.com/fortunate-ouyanghui/LQB/blob/main/sys.png)
 - RCC,HSE选择第三个
+  ![RCC](https://github.com/fortunate-ouyanghui/LQB/blob/main/RCC.png)
 - clock，选择24和80
+  ![clock](https://github.com/fortunate-ouyanghui/LQB/blob/main/clock.png)
 - GPIO_OutPut，选择PC8-PC15为GPIO输出，注意PD2也要选择GPIO输出
+  ![GPIO配置](https://github.com/fortunate-ouyanghui/LQB/blob/main/GPIO_outpput.png)
 
 
 
