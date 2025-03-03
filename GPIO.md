@@ -33,5 +33,9 @@
   ![first](https://github.com/fortunate-ouyanghui/LQB/blob/main/1.png)
 - second
   ![second](https://github.com/fortunate-ouyanghui/LQB/blob/main/2.png)
+## LED代码
+```C
+int main(void)
+```
 
 
