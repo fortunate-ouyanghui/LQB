@@ -26,7 +26,7 @@
   ![RCC](https://github.com/fortunate-ouyanghui/LQB/blob/main/RCC.png)
 - clock，选择24和80
   ![clock](https://github.com/fortunate-ouyanghui/LQB/blob/main/clock.png)
-- GPIO_OutPut，选择PC8-PC15为GPIO输出，注意PD2也要选择GPIO输出
+- GPIO_OutPut，选择PC8-PC15为GPIO输出，注意PD2也要选择GPIO输出(***LED亮的前提是置1->PD2***)
   ![GPIO配置](https://github.com/fortunate-ouyanghui/LQB/blob/main/GPIO_output.png)
 ## Keil5配置
 - first
