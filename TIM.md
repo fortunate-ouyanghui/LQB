@@ -26,13 +26,17 @@ typedef struct Bkeys
     uint8_t short_flag;//按键按下(短按)short_flag为1,用户操作后手动置0
     uint8_t long_flag;//按键按下(长按)long_flag为1,松开后自动归0（可以自己决定手动还是自动）
     uint8_t press;
+
+    uint8_t double_ageEN;//双击两次按下中间是否要计时 1->开始计时 0->不计时
+    uint8_t double_age;//双击中间计时时长
+    uint8_t double_flag;//双击标志，用户自己配置归0
 }Bkeys;
 
 
 uint8_t key_read(void);//获取哪个按键按下
 void key_serv(void);//短按
 void key_serv_long(void);//长按
-
+void key_serv_double();//双击
 
 #endif
 ```
@@ -86,9 +90,51 @@ void key_serv_long()
     {
         for(int i=0;i<5;++i)
         {
-            if(bkeys[i].press=1 && bkeys[i].long_flag==0)
+            if(bkeys[i].press==1 && bkeys[i].long_flag==0)
                 bkeys[i].short_flag=1;
 
+            bkeys[i].press=0;
+            bkeys[i].age=0;
+            bkeys[i].long_flag=0;//用户自己决定手动还是松开后自动归0
+        }
+    }
+    /*3.判断是否长按 */
+    if(bkeys[key_sta].age>69) bkeys[key_sta].long_flag=1;//长按时长为700ms->长按
+}
+
+
+//按键双击
+void key_serv_double()
+{
+    uint8_t key_sta=key_read();
+    /*1.按键时长计时 */
+    if(key_sta!=-1)//按键按下
+    {
+        bkeys[key_sta].age++;
+        if(bkeys[key_sta].age==2) bkeys[key_sta].press=1;//按键按下状态
+    }
+    /*2.按键松开各状态归0并判断是长按还是短按*/
+    else//按键松开
+    {
+        for(int i=0;i<5;++i)
+        {
+            //判断是否是第二次按下并且是双击
+            if(bkeys[i].double_ageEN==1 && bkeys[i].press==1)
+            {
+                bkeys[i].double_flag=1;
+                bkeys[i].press=0;
+                bkeys[i].double_ageEN=0;
+            }
+
+            //第一次按下
+            if(bkeys[i].press==1 && bkeys[i].long_flag==0) bkeys[i].double_ageEN=1;//第一次短按松开后开始计时
+            if(bkeys[i].double_ageEN==1) bkeys[i].double_age++;//计时
+            if(bkeys[i].double_ageEN==1 && bkeys[i].double_age>20)//单击
+            {
+                bkeys[i].short_flag=1;
+                bkeys[i].double_age=0;
+                bkeys[i].double_ageEN=0;
+            }
             bkeys[i].press=0;
             bkeys[i].age=0;
             bkeys[i].long_flag=0;//用户自己决定手动还是松开后自动归0
