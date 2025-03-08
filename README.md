@@ -7,3 +7,4 @@
 1. config.md
 2. GPIO.md
 3. TIM.md
+4. PWM.md
