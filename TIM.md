@@ -152,3 +152,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         key_serv();
 }
 ```
+- 初始化配置
+```C
+void setup()
+{
+    HAL_TIM_Base_Start_IT(&htim6);
+}
+```
