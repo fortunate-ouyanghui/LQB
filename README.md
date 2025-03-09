@@ -10,3 +10,4 @@
 4. PWM.md
 5. Capture.md
 6. systick.md
+7. ADC.md
