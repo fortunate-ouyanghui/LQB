@@ -8,3 +8,4 @@
 2. GPIO.md
 3. TIM.md
 4. PWM.md
+5. Capture.md
