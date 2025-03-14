@@ -1459,3 +1459,33 @@ void LCD_DrawPicture(const u8* picture)
 /* __FONTS_H */
 
 ```
+## 示例程序
+- main.c
+```C
+/* USER CODE BEGIN 2 */
+	
+	LCD_Init();
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+	
+	LCD_Clear(Blue);
+	LCD_SetBackColor(Blue);
+	LCD_SetTextColor(White);
+	
+	LCD_DisplayStringLine(Line0, (uint8_t *)"                    ");
+	LCD_DisplayStringLine(Line1, (uint8_t *)"                    ");
+	LCD_DisplayStringLine(Line2, (uint8_t *)"      LCD Test      ");
+	LCD_DisplayStringLine(Line3, (uint8_t *)"                    ");
+	LCD_DisplayStringLine(Line4, (uint8_t *)"                    ");
+	
+	LCD_SetBackColor(White);
+	LCD_SetTextColor(Blue);
+
+	LCD_DisplayStringLine(Line5, (uint8_t *)"                    ");
+	LCD_DisplayStringLine(Line6, (uint8_t *)"       HAL LIB      ");
+	LCD_DisplayStringLine(Line7, (uint8_t *)"                    ");
+	LCD_DisplayStringLine(Line8, (uint8_t *)"         @80        ");
+	LCD_DisplayStringLine(Line9, (uint8_t *)"                    ");
+```
