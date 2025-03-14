@@ -1489,3 +1489,14 @@ void LCD_DrawPicture(const u8* picture)
 	LCD_DisplayStringLine(Line8, (uint8_t *)"         @80        ");
 	LCD_DisplayStringLine(Line9, (uint8_t *)"                    ");
 ```
+## 关键API
+```C
+LCD_Clear(Black);//设置背景颜色
+LCD_SetBackColor(Red);//设置文本背景颜色
+LCD_SetTextColor(White);//设置文本颜色
+
+char text[30];
+uint8_t i=5;
+sprintf(text,"CNBR:%d",i);
+LCD_DisplayStringLine(Line9,(uint8_t*)text);//在第9行打印文本text
+```
