@@ -1,6 +1,6 @@
 # GPIO
 ## GPIO原理图
-![GPIO原理图](https://github.com/fortunate-ouyanghui/LQB/blob/main/GPIO.png)
+![1](https://github.com/user-attachments/assets/13748cbc-643c-4a67-a3e5-5ca3966f5235)
 ---
 ## GPIO功能:
 4种输入模式:
@@ -18,21 +18,21 @@
 # LED实验
 ## 目的：点亮LED
 ## LED原理图
-![LED原理图](https://github.com/fortunate-ouyanghui/LQB/blob/main/LED%E5%8E%9F%E7%90%86%E5%9B%BE.png)
+![2](https://github.com/user-attachments/assets/cd2afc76-f8f2-46b2-aac0-41016a5522ea)
 ## STM32cubemax配置
 - SYS,Debug选择serial Wire
-  ![SYS](https://github.com/fortunate-ouyanghui/LQB/blob/main/sys.png)
+  ![3](https://github.com/user-attachments/assets/7cd5ecf5-1709-4fca-90fe-5167e5273910)
 - RCC,HSE选择第三个
-  ![RCC](https://github.com/fortunate-ouyanghui/LQB/blob/main/RCC.png)
+  ![4](https://github.com/user-attachments/assets/4788815e-713a-4e09-90c7-cfb524371160)
 - clock，选择24和80
-  ![clock](https://github.com/fortunate-ouyanghui/LQB/blob/main/clock.png)
+  ![5](https://github.com/user-attachments/assets/776a4fc9-cfe5-483a-954e-43f48db8a9bc)
 - GPIO_OutPut，选择PC8-PC15为GPIO输出，注意PD2也要选择GPIO输出(***LED亮的前提是置1->PD2***)
-  ![GPIO配置](https://github.com/fortunate-ouyanghui/LQB/blob/main/GPIO_output.png)
+  ![QQ截图20250315125007](https://github.com/user-attachments/assets/0dedd97c-74ce-448d-9745-8eb6f036b437)
 ## Keil5配置
 - first
-  ![first](https://github.com/fortunate-ouyanghui/LQB/blob/main/1.png)
+  ![7](https://github.com/user-attachments/assets/684b48be-b62c-4e29-a13d-46c3297a1564)
 - second
-  ![second](https://github.com/fortunate-ouyanghui/LQB/blob/main/2.png)
+  ![8](https://github.com/user-attachments/assets/07c8898c-2ce0-4c13-bb66-cc254a3455b6)
 ## LED代码
 - LED.h
 ```C
