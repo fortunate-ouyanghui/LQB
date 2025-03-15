@@ -55,7 +55,7 @@ uint8_t key_read()
     else if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_1)==0) return 2;
     else if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_2)==0) return 3;
     else if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==0) return 4;
-    else return -1;
+    else return 0;
 }
 
 
@@ -63,7 +63,7 @@ uint8_t key_read()
 void key_serv()
 {
     uint8_t key_sta=key_read();
-    if(key_sta!=-1)//按键按下
+    if(key_sta!=0)//按键按下
     {
         bkeys[key_sta].age++;
         if(bkeys[key_sta].age==2) bkeys[key_sta].short_flag=1;
@@ -80,7 +80,7 @@ void key_serv_long()
 {
     uint8_t key_sta=key_read();
     /*1.按键时长计时 */
-    if(key_sta!=-1)//按键按下
+    if(key_sta!=0)//按键按下
     {
         bkeys[key_sta].age++;
         if(bkeys[key_sta].age==2) bkeys[key_sta].press=1;//按键按下状态
@@ -108,7 +108,7 @@ void key_serv_double()
 {
     uint8_t key_sta=key_read();
     /*1.按键时长计时 */
-    if(key_sta!=-1)//按键按下
+    if(key_sta!=0)//按键按下
     {
         bkeys[key_sta].age++;
         if(bkeys[key_sta].age==2) bkeys[key_sta].press=1;//按键按下状态
@@ -143,6 +143,7 @@ void key_serv_double()
     /*3.判断是否长按 */
     if(bkeys[key_sta].age>69) bkeys[key_sta].long_flag=1;//长按时长为700ms->长按
 }
+
 ```
 - TIM中断函数
 ```C
