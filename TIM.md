@@ -8,7 +8,7 @@
 ## 按键原理图
 ![KEY](https://github.com/user-attachments/assets/491ea08c-321c-44cd-852d-f3fb184d532d)
 ## TIM定时原理  
-![TIM定时原理](https://github.com/user-attachments/assets/9532a271-6d8e-4a73-bb88-0496cbefa915)
+![1](https://github.com/user-attachments/assets/16645adc-afc3-44a1-a143-dd1aba9cf807)
 CK_PSC/(PSC+CNT)->每次触发中断的频率为CK_PSC/(PSC+CNT)或每(PSC+CNT)/CK_PSC秒触发一次中断
 ## TIM配置
 ![配置1](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM_NVIC.png)
