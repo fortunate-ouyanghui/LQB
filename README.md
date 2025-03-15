@@ -6,8 +6,9 @@
 # 目录
 1. config.md
 2. GPIO.md
-3. TIM.md
-4. PWM.md
-5. Capture.md
-6. systick.md
-7. ADC.md
+3. LCD.md
+4. TIM.md
+5. PWM.md
+6. Capture.md
+7. systick.md
+8. ADC.md
