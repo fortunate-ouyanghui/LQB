@@ -10,8 +10,7 @@
 ---
 ### second
 - 导入芯片包
-![导入芯片包](https://github.com/fortunate-ouyanghui/LQB/blob/main/ACK.png)
+![1](https://github.com/user-attachments/assets/09075bf0-e2a0-40bb-aa1a-03f83ba030c1)
 - 确认导入
-![确认导入](https://github.com/fortunate-ouyanghui/LQB/blob/main/pack.png)
-
+![2](https://github.com/user-attachments/assets/71e2f439-ac13-48a5-b709-230b89bc4ee6)
 
