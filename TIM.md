@@ -11,9 +11,13 @@
 ![1](https://github.com/user-attachments/assets/16645adc-afc3-44a1-a143-dd1aba9cf807)
 CK_PSC/(PSC+CNT)->每次触发中断的频率为CK_PSC/(PSC+CNT)或每(PSC+CNT)/CK_PSC秒触发一次中断
 ## TIM配置
+- 开启定时器和NVIC中断
 ![配置1](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM_NVIC.png)
+- 配置参数
 ![配置2](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM6.png)
+- 配置引脚
 ![key2](https://github.com/user-attachments/assets/9d388c78-0c13-49ab-b5fa-b34c627ac957)
+- 配置模式
 ![key3](https://github.com/user-attachments/assets/0d37c661-99de-4499-8583-8e6beaa3982f)
 ## 代码编写
 - 消抖原理
