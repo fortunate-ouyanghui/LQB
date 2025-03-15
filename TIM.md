@@ -45,7 +45,7 @@ void key_serv_double();//双击
 #include "KEY.h"
 
 
-Bkeys bkeys[5]={0,0,0,0};
+Bkeys bkeys[5]={0,0,0,0,0};
 
 
 //读取按键返回按键值
@@ -148,7 +148,7 @@ void key_serv_double()
 ```C
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-    if(htim->Instance=TIM6)
+    if(htim->Instance==TIM6)
         key_serv();
 }
 ```
