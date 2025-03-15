@@ -7,6 +7,8 @@
 - 两种模式
 ![e05ac0ec7809a6a3fbf746ae1270b66c](https://github.com/user-attachments/assets/570be005-f258-49e5-be8f-e0057e51e641)
 ![87118d6bccbf9d57fab8f06ca81bfc6f](https://github.com/user-attachments/assets/5c1dd856-1bd0-4108-b736-e187e11ffe8e)
+- PWM原理图
+![3](https://github.com/user-attachments/assets/8bb57260-75bb-47f0-889c-b85eacf63e5a)
 ## PWM配置
 ![pwm](https://github.com/user-attachments/assets/b55fe523-cba8-4b0b-add7-380d48a0d824)
 ![pwm5](https://github.com/user-attachments/assets/6d38ed6a-8946-4715-bdd1-d8a4abac2466)
