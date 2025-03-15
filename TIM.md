@@ -168,3 +168,53 @@ void setup()
     HAL_TIM_Base_Start_IT(&htim6);
 }
 ```
+- My.h
+```C
+#ifndef __MY_H
+#define __MY_H
+
+#include "tim.h"
+#include "gpio.h"
+#include "KEY.h"
+#include "lcd.h"
+extern Bkeys bkeys[5];
+
+void setup(void);
+void loop(void);
+
+
+#endif
+
+```
+- My.c
+```C
+#include "My.h"
+
+
+void setup()
+{
+	LCD_Init();
+	LCD_Clear(Black);
+	LCD_SetBackColor(Black);
+	LCD_SetTextColor(White);
+	HAL_TIM_Base_Start_IT(&htim6);
+}
+
+void loop()
+{
+	if(bkeys[1].double_flag==1)
+	{
+		LCD_DisplayStringLine(Line0,(uint8_t *)"Key1:on");
+		bkeys[1].double_flag=0;
+	}
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(htim->Instance==TIM6)
+	{
+		key_serv_double();
+	}
+}
+
+```
