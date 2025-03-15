@@ -5,12 +5,16 @@
 - 输出比较
 - 编码器
 - 主从触发
+## 按键原理图
+![KEY](https://github.com/user-attachments/assets/491ea08c-321c-44cd-852d-f3fb184d532d)
 ## TIM定时原理  
 ![TIM定时原理](https://github.com/user-attachments/assets/9532a271-6d8e-4a73-bb88-0496cbefa915)
 CK_PSC/(PSC+CNT)->每次触发中断的频率为CK_PSC/(PSC+CNT)或每(PSC+CNT)/CK_PSC秒触发一次中断
 ## TIM配置
 ![配置1](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM_NVIC.png)
 ![配置2](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM6.png)
+![key2](https://github.com/user-attachments/assets/9d388c78-0c13-49ab-b5fa-b34c627ac957)
+![key3](https://github.com/user-attachments/assets/0d37c661-99de-4499-8583-8e6beaa3982f)
 ## 代码编写
 - 消抖原理
 ![消抖](https://github.com/user-attachments/assets/84b91d1a-23e8-4ae9-a2a4-54a2d3ea22cb)
