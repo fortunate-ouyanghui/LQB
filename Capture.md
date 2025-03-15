@@ -23,7 +23,7 @@ void loop()
     float duty1=0;//占空比
 
     //求频率和占空比
-    frq1=1000000.0f/(HAL_TIM_ReadCaptureValue(&htim15,TIM_CHANNEL_1)+1);
-    duty1=(HAL_TIM_ReadCaptureValue(&htim15,TIM_CHANNEL_2)+1)*100.0f/(HAL_TIM_ReadCaptureValue(&htim15,TIM_CHANNEL_1)+1);
+    frq1=1000000.0f/(HAL_TIM_ReadCapturedValue(&htim15,TIM_CHANNEL_1)+1);
+    duty1=(HAL_TIM_ReadCapturedValue(&htim15,TIM_CHANNEL_2)+1)*100.0f/(HAL_TIM_ReadCapturedValue(&htim15,TIM_CHANNEL_1)+1);
 }
 ```
