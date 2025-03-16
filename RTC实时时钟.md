@@ -1,5 +1,7 @@
 # RTC实时时钟实验
 ## 简介
+![7c7db6bad62fecdaf5500936bfbf1aa9](https://github.com/user-attachments/assets/be9446fb-56d7-4d79-84a9-18bbe5b3710d)
+## 配置
 ![1](https://github.com/user-attachments/assets/4c8cd6d3-0660-45f7-b166-7067e34cffc6)
 ## 代码
 - My.h
