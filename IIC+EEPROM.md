@@ -6,4 +6,6 @@
 ![2](https://github.com/user-attachments/assets/179c25a8-2569-4dc0-827b-8f23cd4484ae)
 - 原理图
 ![4](https://github.com/user-attachments/assets/3a530fe1-219a-4307-94b1-d4f775a125cd)
-
+## 配置
+- 移植IIC.h和IIC.c文件。注意：移植官方文件时，注意修改i2c-hal.c文件中#include "i2c.h"为#include "i2c-hal.h"
+- 
