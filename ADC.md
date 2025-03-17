@@ -13,6 +13,8 @@
 ![4](https://github.com/user-attachments/assets/04811e77-6761-4d39-8f0a-77bef365c67c)
 - fifth
 ![5](https://github.com/user-attachments/assets/9a6f598d-919e-47dc-a176-b8b7366d659d)
+- 原理图
+![3](https://github.com/user-attachments/assets/716cb4c1-b0fe-4099-a0d5-f5cd98edb939)
 ## 代码
 - My.h
 ```C
