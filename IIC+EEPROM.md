@@ -20,9 +20,39 @@
 
 - 编写函数eeprom_write
 ```C
-
+//向设备地址1010 000 的寄存器地址ad dr写入数据data
+void eeprom_write(uint8_t addr,uint8_t data)
+{
+	I2CStart();
+	I2CSendByte(0xa0);//设备地址
+	I2CWaitAck();
+	I2CSendByte(addr);//寄存器地址
+	I2CWaitAck();
+	I2CSendByte(data);
+	I2CWaitAck();
+	I2CStop();
+}
 ```
 - 编写函数eeprom_read
 ```C
 
+//向设备地址1010 000的寄存器地址addr读入数据
+uint8_t eeprom_read(uint8_t addr)
+{
+	uint8_t rec;
+	I2CStart();
+	I2CSendByte(0xa0);
+	I2CWaitAck();
+	I2CSendByte(addr);//寄存器地址
+	I2CWaitAck();
+	I2CStop();
+	
+	I2CStart();
+	I2CSendByte(0xA1);
+	I2CWaitAck();
+	rec=I2CReceiveByte();
+	I2CSendNotAck();
+	I2CStop();
+	return rec;
+}
 ```
