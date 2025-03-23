@@ -15,6 +15,9 @@
 - EEPROM
 
 ![2](https://github.com/user-attachments/assets/a3ec654c-93d1-4cc5-ab0f-2439abe5cbee)
+- MCP4017-数字电位器
+![1](https://github.com/user-attachments/assets/f072aa0f-2940-423d-be50-0f134d208690)
+
 - 编写函数eeprom_write
 ```C
 
