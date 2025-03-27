@@ -30,3 +30,10 @@ void loop()
     duty1=(HAL_TIM_ReadCapturedValue(&htim15,TIM_CHANNEL_2)+1)*100.0f/(HAL_TIM_ReadCapturedValue(&htim15,TIM_CHANNEL_1)+1);
 }
 ```
+## 关键API
+```C
+HAL_TIM_IC_Start(&htim2,TIM_CHANNEL_1);
+```
+```C
+HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_2)
+```
