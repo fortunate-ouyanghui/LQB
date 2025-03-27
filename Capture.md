@@ -1,5 +1,8 @@
 # 输入捕获测量占空比实验
 ## 原理
+- 图1
+![2](https://github.com/user-attachments/assets/a9d46509-b00d-4608-9a49-7d9f414a2628)
+- 图2
 ![ebce30bc23b85fc676f790036bc4134e](https://github.com/user-attachments/assets/d1d26b0f-12e9-40b7-8d99-9f41b155eacc)
 ## 配置
 ![capture](https://github.com/user-attachments/assets/f3c17abe-a1ac-44d1-a521-a1c54f05af93)
