@@ -31,9 +31,13 @@ void loop()
 }
 ```
 ## 关键API
+- 开启TIM_CHANNEL_1该通道输入捕获函数
 ```C
 HAL_TIM_IC_Start(&htim2,TIM_CHANNEL_1);
+HAL_TIM_IC_Start(&htim2,TIM_CHANNEL_2);
 ```
+- 读取对应通道CCR值函数
 ```C
+HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_1)
 HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_2)
 ```
