@@ -75,13 +75,13 @@ HAL_ADCEx_Calibration_Start(&hadc2,ADC_SINGLE_ENDED);//第二个参数有两种�
 ```
 - ADC开始转换函数
 ```C
-HAL_TIM_IC_Start(&htim2,TIM_CHANNEL_1);
+HAL_ADC_Start(hadc);	
 ```
 - 等待转换完成函数
 ```C
 HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY)在这个HAL_MAX_DELAY时间范围内，判断是否转换完成（EOC是否置1）,若发现转换完成则返回HAL_OK
 ```
-- 读取TIM_CHANNEL_1通道对应的CCR的值
+- 读取ADC的值
 ```C
-HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_1)
+HAL_ADC_GetValue(hadc);
 ```
