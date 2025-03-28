@@ -68,3 +68,20 @@ float adc_read(ADC_HandleTypeDef *hadc)
 	return adc_f;
 }
 ```
+## 关键API
+- ADC校准函数
+```C
+HAL_ADCEx_Calibration_Start(&hadc2,ADC_SINGLE_ENDED);//第二个参数有两种选择，一个是单端模式校准，另一个是差分模式校准
+```
+- ADC开始转换函数
+```C
+HAL_TIM_IC_Start(&htim2,TIM_CHANNEL_1);
+```
+- 等待转换完成函数
+```C
+HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY)在这个HAL_MAX_DELAY时间范围内，判断是否转换完成（EOC是否置1）,若发现转换完成则返回HAL_OK
+```
+- 读取TIM_CHANNEL_1通道对应的CCR的值
+```C
+HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_1)
+```
