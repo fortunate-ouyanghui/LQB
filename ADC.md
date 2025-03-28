@@ -77,6 +77,10 @@ HAL_ADCEx_Calibration_Start(&hadc2,ADC_SINGLE_ENDED);//第二个参数有两种�
 ```C
 HAL_ADC_Start(hadc);	
 ```
+- ADC停止转换
+```C
+HAL_ADC_Stop(&hadc1);
+```
 - 等待转换完成函数
 ```C
 HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY)在这个HAL_MAX_DELAY时间范围内，判断是否转换完成（EOC是否置1）,若发现转换完成则返回HAL_OK
