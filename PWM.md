@@ -22,13 +22,17 @@ void setup()
   HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_2);
 }
 ```
-- 修改CNT
+- 修改ARR
 ```C
 __HAL_TIM_SET_AUTORELOAD(&htim2,250);
 ```
-- 修改Pulse
+- 修改CCR
 ```C
 __HAL_TIM_SetCompare(&htim2,TIM_CHANNEL_2,100);
+```
+- 修改CNT
+```C
+__HAL_TIM_SET_COUNTER();
 ```
 
 
