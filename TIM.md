@@ -223,3 +223,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 ```C
 HAL_TIM_Base_Start_IT(&htim6);
 ```
+- 定时器周期溢出中断服务函数
+```C
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+```
