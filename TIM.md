@@ -218,3 +218,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 }
 
 ```
+## 关键API
+- 开启中断定时器
+```C
+HAL_TIM_Base_Start_IT(&htim6);
+```
