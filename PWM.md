@@ -32,7 +32,7 @@ __HAL_TIM_SetCompare(&htim2,TIM_CHANNEL_2,100);
 ```
 - 修改CNT
 ```C
-__HAL_TIM_SET_COUNTER();
+__HAL_TIM_SetCounter();
 ```
 
 
