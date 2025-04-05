@@ -136,7 +136,7 @@ void key_serv_double()
 
             //第一次按下
             if(bkeys[i].press==1 && bkeys[i].long_flag==0) bkeys[i].double_ageEN=1;//第一次短按松开后开始计时
-            if(bkeys[i].double_ageEN==1) bkeys[i].double_age++;//计时
+            if(bkeys[i].double_ageEN==1) bkeys[i].double_age++;//计时这里十分重要不能更改
             if(bkeys[i].double_ageEN==1 && bkeys[i].double_age>20)//单击
             {
                 bkeys[i].short_flag=1;
