@@ -12,9 +12,9 @@
 CK_PSC/(PSC+CNT)->每次触发中断的频率为CK_PSC/(PSC+CNT)或每(PSC+CNT)/CK_PSC秒触发一次中断
 ## TIM配置
 - 开启定时器和NVIC中断
-![配置1](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM_NVIC.png)
+![tim2](https://github.com/user-attachments/assets/4805ce38-b433-4d40-a820-bebaf6ac484f)
 - 配置参数
-![配置2](https://github.com/fortunate-ouyanghui/LQB/blob/main/TIM6.png)
+![tim1](https://github.com/user-attachments/assets/ebc4197d-05c1-4551-a6cd-6b22862b9485)
 - 配置引脚
 ![key2](https://github.com/user-attachments/assets/9d388c78-0c13-49ab-b5fa-b34c627ac957)
 - 配置模式
