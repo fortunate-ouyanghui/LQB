@@ -1,6 +1,7 @@
 # ADC模拟电压测量实验(单通道非扫描)
 ## 原理
 ![ADC](https://github.com/user-attachments/assets/580f3f3f-3e08-4ddb-be02-d29b44f1547f)
+![ADC](https://github.com/user-attachments/assets/87030744-57a1-4582-8db3-4bf655d294c5)
 ## 配置
 - first
 
