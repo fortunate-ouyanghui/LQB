@@ -90,3 +90,23 @@ HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY)在这个HAL_MAX_DELAY时间范�
 ```C
 HAL_ADC_GetValue(hadc);
 ```
+## ADC1两个通道单独转换
+- 配置
+![ADC1](https://github.com/user-attachments/assets/079ceb73-5044-4bb6-a8e3-421df0411a56)
+![ADC2](https://github.com/user-attachments/assets/5950a165-57f1-4fb5-82f3-b4465be031bc)
+- 代码
+```C
+在setup()中ADC校准
+void Read_Injected_Channels(uint32_t* padc1_in1_value,uint32_t* padc1_in6_value)
+{
+	uint16_t adc1_in1_value = 0;	
+	uint16_t adc1_in6_value = 0;
+	HAL_ADCEx_InjectedStart(&hadc1);
+	
+	while(HAL_ADCEx_InjectedPollForConversion(&hadc1,HAL_MAX_DELAY)!=HAL_OK);
+	*padc1_in1_value=HAL_ADCEx_InjectedGetValue(&hadc1,ADC_INJECTED_RANK_1);
+	*padc1_in6_value=HAL_ADCEx_InjectedGetValue(&hadc1,ADC_INJECTED_RANK_2);
+	HAL_ADCEx_InjectedStop(&hadc1);
+}
+```
+
